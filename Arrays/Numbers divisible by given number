@@ -1,0 +1,18 @@
+// complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
+// Example(Input1, Input2 --> Output)
+// [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
+
+function divisibleBy(number,divisor){
+  let divisibleNumbers = [];
+  for( let i = 0; i<number.length; i++){
+    if(number[i] % divisor === 0){
+        divisibleNumbers.push(number[i])
+    }
+  }
+return divisibleNumbers;
+}
+let a = [2,5,6]
+let d = 2
+let result = divisibleBy(a,d)
+console.log(result)
+

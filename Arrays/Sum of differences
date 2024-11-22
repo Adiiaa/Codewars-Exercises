@@ -1,0 +1,15 @@
+
+function sumOfDifferences(arr){
+    let sum = 0
+    if(arr.length <= 1){         // checking if array has one element or empty and if the condition is true
+      return 0;                      // it will return 0
+    }
+  arr.sort((a,b)=>b-a);          // changing array into descending order
+  for( let i = 1; i<arr.length; i++ ){
+    sum+=arr[i-1]-arr[i];
+  }
+  return sum;
+  }
+  let numbers = [11,55,66,3]
+  let result = sumOfDifferences(numbers)
+  console.log(result)
