@@ -4,9 +4,9 @@ function sum(arr){
     for(let i = 0; i<arr.length; i++){
         sum+=arr[i];
     }
-    if(arr === []){
-        return 0;
-    }
+    // if(arr = []){
+    //     return 0;
+    // }
 return sum;
 }
 let a = [1,2,3]

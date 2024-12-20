@@ -1,0 +1,6 @@
+function opposite(number) {
+    return -number
+}
+let number= 77
+let result = opposite(number)
+console.log(result)
