@@ -6,3 +6,19 @@
 // highAndLow("1 2 -3 4 5"); // return "5 -3"
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
 
+function highLow(str){
+    let a = str.split(' ')
+    let arr = []
+    let b = Math.max(...a)
+    arr.push(b)
+    let c = Math.min(...a)
+    arr.push(c)
+
+    let j = arr.join(' ')
+    
+    
+    return j
+    
+}
+let str = "1 2 3 4 5"
+console.log(highLow(str))
